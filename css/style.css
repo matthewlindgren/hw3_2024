@@ -142,8 +142,14 @@ nav a:hover, nav a:focus {
   grid-row-gap: 15px;
 }
 
-.container:first-child {
+.container :first-child {
   grid-column: 1 / 4;
+  background-image: url("images/header.jpg");
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
