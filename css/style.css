@@ -140,12 +140,7 @@ nav a:hover, nav a:focus {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-row-gap: 15px;
-}
-
-.container :first-child {
-  grid-column: 1 / 4;
-  background-image: url("images/header.jpg");
-  background-repeat: no-repeat;
+  width: 100%;
 }
 
 img {
@@ -154,14 +149,30 @@ img {
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-
-
+.container> :first-child {
+  grid-column: 1 / 4;
+  background-image: url("../images/header.jpg");
+}
 
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
  four rows in the grid. */
 
 /*This will be a lot of rules.... but be strategic and combine seletors*/
-
+.about, .method, .clients, .contact {
+  grid-column: 2 / 3;
+}
+.about {
+  grid-row: 2 / 3;
+}
+.method {
+  grid-row: 3 / 4;
+}
+.clients {
+  grid-row: 4 / 5;
+}
+.contact {
+  grid-row: 5 / 6;
+}
 
 /* Step 8: Write the selector/rule property to style the .text-block class. */
 
